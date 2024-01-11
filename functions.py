@@ -1,6 +1,7 @@
 import os
 from PIL import Image
 
+
 # resize the image to smaller size while maintaining aspect ratio
 # by default, the width and height are set to 500 pixels
 def resize_image(img, selected_size, width=500, height=500):
@@ -15,8 +16,8 @@ def resize_image(img, selected_size, width=500, height=500):
         img.thumbnail((int(width), int(height)))
     return img
 
-# convert the image to the selected file type
 
+# convert the image to the selected file type
 def convert_image(output_folder, img, filename, file_type):
     clean_name = os.path.splitext(filename)[0]
 
